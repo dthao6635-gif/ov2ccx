@@ -148,4 +148,334 @@
 </footer>
 
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dù Che Ngoài Trời</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+    }
+
+    body{
+      background:#f5f5f5;
+      color:#222;
+    }
+
+    header{
+      background:white;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 30px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#2e7d32;
+    }
+
+    .menu{
+      display:flex;
+      gap:20px;
+    }
+
+    .menu a{
+      text-decoration:none;
+      color:#222;
+      font-weight:bold;
+    }
+
+    .hero{
+      height:90vh;
+      background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .overlay{
+      background:rgba(0,0,0,0.5);
+      padding:40px;
+      border-radius:25px;
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      font-size:20px;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 28px;
+      background:#2e7d32;
+      color:white;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
+    }
+
+    .section-title{
+      text-align:center;
+      margin:60px 0 30px;
+      font-size:36px;
+    }
+
+    .products{
+      padding:20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h3{
+      margin-bottom:10px;
+      font-size:24px;
+    }
+
+    .price{
+      color:#2e7d32;
+      font-size:22px;
+      font-weight:bold;
+      margin:10px 0;
+    }
+
+    .contact{
+      padding:70px 20px;
+      text-align:center;
+      background:white;
+      margin-top:60px;
+    }
+
+    .contact h2{
+      margin-bottom:15px;
+      font-size:40px;
+    }
+
+    .contact p{
+      margin-bottom:25px;
+      font-size:18px;
+    }
+
+    footer{
+      background:#111;
+      color:white;
+      text-align:center;
+      padding:25px;
+    }
+
+    .zalo-button{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      background:#0084ff;
+      color:white;
+      padding:15px 20px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:38px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      header{
+        flex-direction:column;
+        gap:10px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    Dù Che Ngoài Trời
+  </div>
+
+  <div class="menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Liên hệ</a>
+  </div>
+
+</header>
+
+<section class="hero">
+
+  <div class="overlay">
+
+    <h1>Dù Che Cao Cấp</h1>
+
+    <p>
+      Chuyên cung cấp dù sân vườn, dù quán cafe,
+      dù lệch tâm cao cấp.
+    </p>
+
+    <a class="btn" href="#">
+      Xem sản phẩm
+    </a>
+
+  </div>
+
+</section>
+
+<h2 class="section-title">
+  Sản phẩm nổi bật
+</h2>
+
+<section class="products">
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200">
+
+    <div class="card-content">
+
+      <h3>Dù Lệch Tâm</h3>
+
+      <p>
+        Thiết kế hiện đại cho quán cafe và sân vườn.
+      </p>
+
+      <div class="price">
+        6.900.000đ
+      </div>
+
+      <a class="btn" href="#">
+        Liên hệ
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200">
+
+    <div class="card-content">
+
+      <h3>Dù Sân Vườn</h3>
+
+      <p>
+        Chống nắng cực tốt cho không gian ngoài trời.
+      </p>
+
+      <div class="price">
+        5.500.000đ
+      </div>
+
+      <a class="btn" href="#">
+        Liên hệ
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="card">
+
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1200">
+
+    <div class="card-content">
+
+      <h3>Dù Quán Cafe</h3>
+
+      <p>
+        Phong cách sang trọng và bền bỉ.
+      </p>
+
+      <div class="price">
+        7.200.000đ
+      </div>
+
+      <a class="btn" href="#">
+        Liên hệ
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact">
+
+  <h2>Liên hệ báo giá</h2>
+
+  <p>
+    Hotline: 0900 000 000
+  </p>
+
+  <a class="btn" href="#">
+    Gọi ngay
+  </a>
+
+</section>
+
+<footer>
+  © 2026 Dù Che Ngoài Trời
+</footer>
+
+<a class="zalo-button" href="#">
+  Chat Zalo
+</a>
+
+</body>
+</html
